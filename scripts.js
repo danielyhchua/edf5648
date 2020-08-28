@@ -16,11 +16,10 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 // Get position of all sections
-var workExpPos = document.querySelector("#work-experience").offsetTop;
-var eduPos = document.querySelector("#education").offsetTop;
-var skillsPos = document.querySelector("#skills").offsetTop - 1;
-// var footer = document.querySelector("footer");
-// var footerPos = footer.offsetTop;
+var contextPos = document.querySelector("#context").offsetTop;
+var onlineOverviewPos = document.querySelector("#online-learning").offsetTop;
+var blendedPos = document.querySelector("#blended-learning").offsetTop;
+var designEdPos = document.querySelector("#online-design-ed").offsetTop;
 
 // Get nav li items
 var navList = document.querySelectorAll(".nav-item");
@@ -37,14 +36,18 @@ function addSticky() {
 // Add active class for correct scroll position
 function addActive() {
   var posIndex;
-  if (window.pageYOffset < workExpPos) {
+  if (window.pageYOffset < contextPos) {
     posIndex = 0;
-  } else if (window.pageYOffset >= workExpPos && window.pageYOffset < eduPos) {
+  } else if (window.pageYOffset >= contextPos && window.pageYOffset < onlineOverviewPos) {
     posIndex = 1;
-  } else if (window.pageYOffset >= eduPos && window.pageYOffset < skillsPos) {
+  } else if (window.pageYOffset >= onlineOverviewPos && window.pageYOffset < blendedPos) {
     posIndex = 2;
-  } else if (window.pageYOffset >= skillsPos) {
+  } else if (window.pageYOffset >= blendedPos && window.pageYOffset < designEdPos) {
     posIndex = 3;
+  } else if (window.pageYOffset >= designEdPos && window.pageYOffset + document.documentElement.clientHeight !== document.documentElement.scrollHeight) {
+    posIndex = 4;
+  } else if (window.pageYOffset + document.documentElement.clientHeight === document.documentElement.scrollHeight) {
+    posIndex = 5;
   }
   navList.forEach((item, i) => {
     if (posIndex === i) {
