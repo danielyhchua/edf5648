@@ -5,6 +5,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.05rem;
 }
 
 .font-weight-semi-bold {
@@ -17,12 +18,12 @@ body {
 }
 
 .mybg-light-grey {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 
 @media (min-width: 992px) {
-  .border-lg-right {
-    border-right: 1px solid #dee2e6 !important;
+  .border-lg-left {
+    border-left: 1px solid #dee2e6 !important;
   }
 }
 
@@ -54,7 +55,7 @@ body {
   #navbar {
     width: 100px;
     float: right;
-    right: 20px;
+    right: 50px;
     padding: 0;
     opacity: 90%;
   }
@@ -69,13 +70,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2.1rem;
-    padding-bottom: 2.1rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
   }
 
   .sticky-nav {
     position: fixed;
-    top: 50px;
+    top: 30px;
     right: 20px;
   }
 }
@@ -83,14 +84,14 @@ body {
 /*****************   SECTION CONTENTS   *****************/
 @media (min-width: 768px) {
   .section-contents {
-    width: 75%;
+    width: 65%;
     margin: inherit auto;
   }
 }
 
 @media (min-width: 992px) {
   .section-container {
-    margin-right: 120px;
+    margin-right: 150px;
   }
 
   .section-title {
@@ -100,9 +101,23 @@ body {
   }
 
   .section-contents {
-    width: 63%;
+    width: 57%;
     margin: inherit auto;
   }
+}
+
+/* all screen sizes */
+.section-title {
+  text-align: center;
+}
+
+.section-contents p {
+  margin-bottom: 1.5rem;
+  line-height: 1.9rem;
+}
+
+.biblio {
+  text-indent: -3rem;
 }
 
 /*****************   FOOTER   *****************/
