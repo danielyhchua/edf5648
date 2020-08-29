@@ -119,6 +119,7 @@ body {
 
 .biblio {
   text-indent: -3rem;
+  word-wrap: break-word;
 }
 
 /*****************   FOOTER   *****************/
