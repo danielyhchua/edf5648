@@ -21,6 +21,10 @@ body {
   background-color: #f9f9f9;
 }
 
+.small-caps {
+  font-variant-caps: small-caps !important;
+}
+
 @media (min-width: 992px) {
   .border-lg-left {
     border-left: 1px solid #dee2e6 !important;
