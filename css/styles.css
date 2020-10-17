@@ -25,108 +25,26 @@ body {
   font-variant-caps: small-caps !important;
 }
 
-@media (min-width: 992px) {
-  .border-lg-left {
-    border-left: 1px solid #dee2e6 !important;
-  }
-}
-
 /*****************   LISTS   *****************/
 .list-no-bullet {
   list-style-type: none;
   padding-left: 0;
 }
 
-/*****************   HEADER   *****************/
-/* Scroll button */
-.scroll {
-  opacity: 80%;
+/*****************   RIGHT SIDEBAR   *****************/
+.right-sidebar {
+  height: 100vh;
 }
 
-/* Navbar */
-.sticky-nav {
-  position: fixed;
-  z-index: 100;
-  top: 0;
+/*****************   STUDENTS' WORK AREA   *****************/
+.overlay-div {
+  height: 100%;
   width: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: .5;
 }
 
-.active {
-  background-color: #0848A1;
-}
-
-@media (min-width: 992px) {
-  #navbar {
-    width: 100px;
-    float: right;
-    right: 50px;
-    padding: 0;
-    opacity: 85%;
-  }
-
-  #navbar .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0 !important;
-  }
-
-  .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.4rem;
-    padding-top: 1.9rem;
-    padding-bottom: 1.9rem;
-  }
-
-  .sticky-nav {
-    position: fixed;
-    top: 30px;
-    right: 20px;
-  }
-}
-
+/*****************   HEADER   *****************/
 /*****************   SECTION CONTENTS   *****************/
-@media (min-width: 768px) {
-  .section-contents {
-    width: 65%;
-    margin: inherit auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-container {
-    margin-right: 150px;
-  }
-
-  .section-title {
-    width: 70%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .section-contents {
-    width: 57%;
-    margin: inherit auto;
-  }
-}
-
-/* all screen sizes */
-.section-title {
-  text-align: center;
-}
-
-.section-contents p {
-  margin-bottom: 1.5rem;
-  line-height: 1.9rem;
-}
-
-.biblio {
-  text-indent: -3rem;
-  word-wrap: break-word;
-}
-
 /*****************   FOOTER   *****************/
-.footer-credits {
-  font-weight: 300;
-}
