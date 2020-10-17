@@ -17,7 +17,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
     <div class="container-fluid">
       <!-- COLLAPSE NAV BUTTTON -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,32 +45,36 @@
   </nav>
 
   <!-- MAIN CONTAINER -->
-  <div class="container-fluid">
-    <div class="row py-4">
+  <div class="container-fluid main-container">
+    <div class="row py-5">
 
       <!-- STUDENT'S WORK AREA -->
-      <div class="col-12 col-lg-10">
-
-        <!-- Week 01 -->
-        <div class="container">
-          <h2>Week 01</h2>
+      <div class="col-12 col-lg-10 student-work">
 
 
 
-        </div><!-- Week 01 -->
+
 
       </div><!-- STUDENT'S WORK AREA -->
 
       <!-- SIDEBAR -->
-      <div class="col-12 col-lg-2 border-left right-sidebar">
-        <div class="">
-          <p>Current week: <span class="h4 text-primary">05</span></p>
+      <div class="col-8 col-lg-2 pt-5 right-sidebar mx-auto">
+        <div class="card mb-3">
+          <div class="card-header">
+            <h4 class="h5 mb-0">Current week</h4>
+          </div>
+          <div class="card-body text-center">
+            <p class="h2 text-primary mb-0">03</p>
+          </div>
         </div>
-        <div class="">
-          <p>This week's tasks:</p>
-          <ol>
-            <li>Pin-up on 13 Oct 2020</li>
-          </ol>
+        <div class="card">
+          <div class="card-header">
+            <h4 class="h5 mb-0">Upcoming tasks</h4>
+          </div>
+          <div class="card-body">
+            <p>30 Oct 2020: Desk crit</p>
+            <p>06 Nov 2020: Pin-up</p>
+          </div>
         </div>
       </div><!-- SIDEBAR -->
 
