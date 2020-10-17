@@ -25,6 +25,10 @@ body {
   font-variant-caps: small-caps !important;
 }
 
+.main-container {
+  margin-top: 70px;
+}
+
 /*****************   LISTS   *****************/
 .list-no-bullet {
   list-style-type: none;
@@ -32,8 +36,17 @@ body {
 }
 
 /*****************   RIGHT SIDEBAR   *****************/
-.right-sidebar {
-  height: 100vh;
+@media (min-width: 992px) {
+  .right-sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 69px;
+    right: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: 1px solid #dee2e6 !important;
+  }
 }
 
 /*****************   STUDENTS' WORK AREA   *****************/
@@ -43,6 +56,13 @@ body {
   position: absolute;
   background-color: #000;
   opacity: .5;
+}
+
+.student-work {
+  /* height: 100vh; */
+  /* Set this height to the appropriate size */
+  /* overflow-y: scroll; */
+  /* Only add scroll to vertical column */
 }
 
 /*****************   HEADER   *****************/
