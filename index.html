@@ -25,12 +25,15 @@
       </button><!-- COLLAPSE NAV BUTTTON -->
       <!-- NAVBAR ITEMS -->
       <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="border-right pr-2">
+          <p class="mb-0">Ada Lee</p>
+        </div>
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="/">Studio Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Workspace</a>
+            <a class="nav-link" href="/student-ada-lee.html">My Workspace</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Project Brief</a>
@@ -59,6 +62,57 @@
           <div class="card-deck mb-3">
             <!-- Student board -->
             <div class="card">
+              <img class="card-img-top" src="images/student-works/ada-lee-board.png" style="height: 100%; object-fit: cover;" alt="">
+              <div class="overlay-div"></div>
+              <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <a class="stretched-link" href="student-board.html" data-toggle="modal" data-target="#studentBoard"></a>
+                <!-- Modal -->
+                <div class="modal fade" id="studentBoard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Ada Lee | Week 02</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container-fluid">
+                          <div class="row align-items-center mb-3">
+                            <div class="col-3 px-0">
+                              <h6>Click image to view Ada's Board</h6>
+                            </div>
+                            <div class="col-9">
+                              <a href="https://app.conceptboard.com/board/yhe9-0mz6-daao-os1e-xcxi" target="_blank">
+                                <img class="img-fluid border py-3" src="images/student-works/ada-lee-board.png" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="row align-items-center">
+                            <div class="col-3 px-0">
+                              <h6>Watch Crit Recording</h6>
+                            </div>
+                            <div class="col-9">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kCLUnj48ueQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowfullscreen></iframe>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- container-fluid -->
+                      </div><!-- modal-body -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- Modal -->
+                <h3 class="card-title text-white">Name: Ada Lee</h5>
+                  <p class="card-text text-white">Last updated: 22/10/2020</p>
+              </div>
+            </div>
+            <!-- Student board -->
+            <div class="card">
               <img class="card-img-top" src="images/student-works/render-01.jpg" alt="">
               <div class="overlay-div"></div>
               <div class="card-img-overlay d-flex flex-column justify-content-center">
@@ -77,16 +131,6 @@
                   <p class="card-text text-white">Last updated: 22/10/2020</p>
               </div>
             </div>
-            <!-- Student board -->
-            <div class="card">
-              <img class="card-img-top" src="images/student-works/render-01.jpg" alt="">
-              <div class="overlay-div"></div>
-              <div class="card-img-overlay d-flex flex-column justify-content-center">
-                <a class="stretched-link" href="student-board.html"></a>
-                <h3 class="card-title text-white">Name: Steffany Andrews</h5>
-                  <p class="card-text text-white">Last updated: 22/10/2020</p>
-              </div>
-            </div>
           </div><!-- Card Row -->
 
           <!-- Card Row -->
@@ -97,20 +141,21 @@
               <div class="overlay-div"></div>
               <div class="card-img-overlay d-flex flex-column justify-content-center">
                 <a class="stretched-link" href="student-board.html"></a>
-                <h3 class="card-title text-white">Name: Adam Michael</h5>
-                  <p class="card-text text-white">Last updated: 21/10/2020</p>
+                <h3 class="card-title text-white">Name: Steffany Andrews</h5>
+                  <p class="card-text text-white">Last updated: 22/10/2020</p>
               </div>
             </div>
             <!-- Student board -->
             <div class="card">
-              <img class="card-img-top" src="images/student-works/ada-lee-board.png" style="height: 100%; object-fit: cover;" alt="">
+              <img class="card-img-top" src="images/student-works/render-01.jpg" alt="">
               <div class="overlay-div"></div>
               <div class="card-img-overlay d-flex flex-column justify-content-center">
                 <a class="stretched-link" href="student-board.html"></a>
-                <h3 class="card-title text-white">Name: Ada Lee</h5>
+                <h3 class="card-title text-white">Name: Adam Michael</h5>
                   <p class="card-text text-white">Last updated: 21/10/2020</p>
               </div>
             </div>
+
             <!-- Student board -->
             <div class="card">
               <img class="card-img-top" src="images/student-works/render-01.jpg" alt="">
@@ -210,7 +255,7 @@
             <h4 class="h5 mb-0">Current week</h4>
           </div>
           <div class="card-body text-center">
-            <p class="h3 text-primary mb-0">03</p>
+            <p class="h3 text-info mb-0">03</p>
           </div>
         </div><!-- Current Week -->
         <!-- Upcoming Tasks -->
